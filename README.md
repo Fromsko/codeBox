@@ -1,14 +1,18 @@
 # codeBox
 
-> 是一款采用 `wails + vue3 + ts` 构建的登录器, 适用于张家界学院校园网系统
+> 是一款采用用于对接本地 Ollama 进行快速聊天的程序
+>
+> 开箱即用，自动识别 Ollama 中的模型
 
 [![Build and Release Wails App](https://github.com/Fromsko/codeBox/actions/workflows/main.yaml/badge.svg?branch=dev)](https://github.com/Fromsko/codeBox/actions/workflows/main.yaml)
 
 ## 📑 功能模块
 
-- 登录 `@/views/Login.vue`
-- 云盘 `@/views/cloudPan.vue`
-- 小菜单 `@/components/ActionMenu.vue`
+- 实时聊天
+- 截屏记录
+- 复制消息
+- 历史记录
+- 访问控制
 
 ## 🚀 安装
 
@@ -93,12 +97,12 @@ go install github.com/wailsapp/wails/v2/cmd/wails@latest
 
 - 主页面
     <div align="center">
-    <img src="res/image-2.png" alt="" width="80%">
+    <img src="assets/resources/chat-page.png" alt="" width="80%">
     </div>
 
 - 演示
     <div align="center">
-    <img src="res/recording.gif" alt="" width="80%">
+    <img src="assets/resources/show.gif" alt="" width="80%">
     </div>
 
 ## 👨‍🔬 鸣谢
