@@ -53,7 +53,7 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   components: {
-    CashIcon
-  }
+    CashIcon,
+  },
 })
 </script>

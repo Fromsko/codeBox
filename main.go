@@ -15,7 +15,7 @@ import (
 var assets embed.FS
 
 func main() {
-	// Create an instance of the app structure
+	// Create an instance of the app structure qwen-max-2025-01-25
 	app := backend.NewApp()
 	client := api.NewSchoolClient()
 

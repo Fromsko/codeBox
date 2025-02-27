@@ -1,21 +1,23 @@
-import router from '@/router';
-import { createPinia } from 'pinia';
-import { createApp } from 'vue';
-import { createI18n } from 'vue-i18n';
+import { createPinia } from 'pinia'
+import { createApp } from 'vue'
+import { createI18n } from 'vue-i18n'
 
-import App from './App.vue';
-import en from './langurage/en';
-import zh from './langurage/zh';
+import App from './App.vue'
+import router from './router'
+
+import '@/assets/styles/index.scss'
+import en from './language/en'
+import zh from './language/zh'
 
 let messages = {
-    zh,
-    en
+  zh,
+  en,
 }
 
 const i18n = createI18n({
-    legacy: false,  // 设置为 false，启用 composition API 模式
-    messages,
-    locale: 'en'  // 设置默认语言
+  legacy: false,
+  messages,
+  locale: 'en',
 })
 
 const app = createApp(App)

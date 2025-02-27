@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'myfont';
-  src:  url('font.eot?ajii88');
-  src:  url('font.eot?ajii88#iefix') format('embedded-opentype'),
+  src: url('font.eot?ajii88');
+  src:
+    url('font.eot?ajii88#iefix') format('embedded-opentype'),
     url('font.ttf?ajii88') format('truetype'),
     url('font.woff?ajii88') format('woff'),
     url('font.svg?ajii88#font') format('svg');
@@ -10,7 +11,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^='icon-'],
+[class*=' icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'myfont' !important;
   speak: never;
@@ -26,32 +28,32 @@
 }
 
 .icon-add:before {
-  content: "\e900";
+  content: '\e900';
 }
 .icon-album:before {
-  content: "\e901";
+  content: '\e901';
 }
 .icon-favorite:before {
-  content: "\e902";
+  content: '\e902';
 }
 .icon-file:before {
-  content: "\e903";
+  content: '\e903';
 }
 .icon-gear:before {
-  content: "\e904";
+  content: '\e904';
 }
 .icon-like:before {
-  content: "\e905";
+  content: '\e905';
 }
 .icon-search:before {
-  content: "\e906";
+  content: '\e906';
 }
 .icon-transfer:before {
-  content: "\e907";
+  content: '\e907';
 }
 .icon-trash:before {
-  content: "\e908";
+  content: '\e908';
 }
 .icon-vault:before {
-  content: "\e909";
+  content: '\e909';
 }

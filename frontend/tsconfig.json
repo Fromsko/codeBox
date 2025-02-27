@@ -12,12 +12,13 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["./src/*"],
-      "api/*": ["./src/api/*"],
-      "views/*": ["./src/views/*"],
-      "components/*": ["./src/components/*"]
+      "@/*": ["./*"],
+      "api/*": ["./api/*"],
+      "views/*": ["./views/*"],
+      "components/*": ["./components/*"],
+      "styles/*": ["./styles/*"]
     },
     "allowJs": true
   },
@@ -27,5 +28,5 @@
       "path": "./tsconfig.node.json"
     }
   ],
-  "types": ["naive-ui/volar", "vue", "vite/client"]
+  "types": ["naive-ui/volar", "vue", "vite/client", "src/types/vite-env.d.ts"]
 }

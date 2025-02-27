@@ -1,11 +1,3 @@
-<!--
-  File: 404.vue
-  Author: Fromsko
-  Created At: 2024-09-17
-  GitHub: https://github.com/fromsko
-  Description: 404重定向
--->
-
 <template>
   <n-result status="404" title="404 资源不存在" description="生活总归带点荒谬">
     <template #footer>

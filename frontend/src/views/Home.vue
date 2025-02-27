@@ -1,10 +1,3 @@
-<!--
-  File: MenuBar.vue
-  Author: Fromsko
-  Created At: 2024-09-23
-  GitHub: https://github.com/fromsko
-  Description: 阿里云贴边栏
--->
 <template>
   <div class="container">
     <div class="left-box" ref="leftBox">
@@ -40,7 +33,11 @@
         </li>
       </ul>
       <div class="user-info">
-        <img src="https://q.qlogo.cn/g?b=qq&nk=1614355756&s=100" alt="" @click="router.back" />
+        <img
+          src="https://q.qlogo.cn/g?b=qq&nk=1614355756&s=100"
+          alt=""
+          @click="router.back"
+        />
         <span>草帽小子</span>
         <i class="icon icon-gear" @click="openSettingModal">
           <SettingModal v-if="showModal" :isOpen="showModal" />

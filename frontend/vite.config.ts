@@ -1,10 +1,10 @@
-import vue from '@vitejs/plugin-vue';
-import { fileURLToPath, URL } from "node:url";
-import AutoImport from 'unplugin-auto-import/vite';
-import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
-import Components from 'unplugin-vue-components/vite';
-import { defineConfig } from 'vite';
-import vueDevTools from 'vite-plugin-vue-devtools';
+import vue from '@vitejs/plugin-vue'
+import { fileURLToPath, URL } from 'node:url'
+import AutoImport from 'unplugin-auto-import/vite'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
+import { defineConfig } from 'vite'
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,41 +17,47 @@ export default defineConfig({
         'vue',
         'vue-router',
         {
-          axios: [
-            ['default', 'axios']
-          ]
+          axios: [['default', 'axios']],
         },
         {
           'naive-ui': [
             'useDialog',
             'useMessage',
             'useNotification',
-            'useLoadingBar'
-          ]
-        }
-      ]
+            'useLoadingBar',
+          ],
+        },
+      ],
     }),
     Components({
       dts: './src/types/components.d.ts',
       types: [
         {
           from: 'vue-router',
-          names: ['RouterLink', 'RouterView']
-        }
+          names: ['RouterLink', 'RouterView'],
+        },
       ],
-      resolvers: [NaiveUiResolver()]
-    })
+      resolvers: [NaiveUiResolver()],
+    }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "@/assets/styles/variables.scss";`,
+      },
+    },
+  },
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-      "api": fileURLToPath(new URL("./src/api", import.meta.url)),
-      "views": fileURLToPath(new URL("./src/views", import.meta.url)),
-      "components": fileURLToPath(new URL("./src/components", import.meta.url)),
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      api: fileURLToPath(new URL('./src/api', import.meta.url)),
+      views: fileURLToPath(new URL('./src/views', import.meta.url)),
+      components: fileURLToPath(new URL('./src/components', import.meta.url)),
+      styles: fileURLToPath(new URL('./src/styles', import.meta.url)),
     },
   },
   define: {
     // enable hydration mismatch details in production build
-    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'true'
-  }
-});
+    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'true',
+  },
+})

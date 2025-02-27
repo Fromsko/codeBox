@@ -1,3 +1,10 @@
+<template>
+  <div class="container">
+    <div class="close-btn" @click="handleClose">x</div>
+    <div class="minimize-btn" @click="handleMinimize">-</div>
+  </div>
+</template>
+
 <script setup lang="ts">
 import { Quit, WindowMinimise } from '../../wailsjs/runtime'
 
@@ -10,14 +17,10 @@ const handleMinimize = () => {
 }
 </script>
 
-<template>
-  <div class="container">
-    <div class="close-btn" @click="handleClose">x</div>
-    <div class="minimize-btn" @click="handleMinimize">-</div>
-  </div>
-</template>
-
-<style scoped>
+<style lang="scss" scoped>
+.container{
+  user-select: none;
+}
 
 .close-btn,
 .minimize-btn {
@@ -30,7 +33,7 @@ const handleMinimize = () => {
   font-size: 20px;
   color: black;
   transition: background-color 0.3s;
-  z-index: 1000; /* 设置较高的 z-index */
+  z-index: 10;
 }
 
 .close-btn:hover,
