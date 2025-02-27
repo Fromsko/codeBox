@@ -1,11 +1,11 @@
 package api
 
 import (
+	"codeBox/backend/config"
+	"codeBox/backend/model"
+	"codeBox/backend/utils"
 	"fmt"
 	"net/http"
-	"sLogin/backend/config"
-	"sLogin/backend/model"
-	"sLogin/backend/utils"
 	"strconv"
 
 	"github.com/Fromsko/gouitls/knet"

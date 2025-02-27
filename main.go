@@ -1,9 +1,9 @@
 package main
 
 import (
+	"codeBox/backend"
+	"codeBox/backend/api"
 	"embed"
-	"sLogin/backend"
-	"sLogin/backend/api"
 
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
@@ -21,7 +21,7 @@ func main() {
 
 	// Create application with options
 	err := wails.Run(&options.App{
-		Title:  "sLogin",
+		Title:  "codeBox",
 		Width:  400,
 		Height: 500,
 		AssetServer: &assetserver.Options{

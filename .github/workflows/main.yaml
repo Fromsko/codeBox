@@ -77,5 +77,5 @@ jobs:
           tag_name: ${{ env.VERSION }}
           body_path: ${{ github.workspace }}-CHANGELOG.txt
           files: |
-            build/bin/sLogin.exe
-            build/bin/sLogin-amd64-installer.exe
+            build/bin/codeBox.exe
+            build/bin/codeBox-amd64-installer.exe

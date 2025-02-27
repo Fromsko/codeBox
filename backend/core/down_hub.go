@@ -1,10 +1,10 @@
 package core
 
 import (
+	"codeBox/backend/model"
 	"fmt"
 	"os"
 	"path/filepath"
-	"sLogin/backend/model"
 
 	"github.com/gocolly/colly/v2"
 )

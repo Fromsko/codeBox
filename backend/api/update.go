@@ -1,8 +1,8 @@
 package api
 
 import (
-	"sLogin/backend/config"
-	"sLogin/backend/core"
+	"codeBox/backend/config"
+	"codeBox/backend/core"
 )
 
 func Update() {

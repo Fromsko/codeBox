@@ -1,4 +1,4 @@
-module sLogin
+module codeBox
 
 go 1.22
 

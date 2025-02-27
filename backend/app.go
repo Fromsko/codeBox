@@ -1,11 +1,11 @@
 package backend
 
 import (
+	"codeBox/backend/config"
+	"codeBox/backend/core"
+	"codeBox/backend/model"
+	"codeBox/backend/utils"
 	"context"
-	"sLogin/backend/config"
-	"sLogin/backend/core"
-	"sLogin/backend/model"
-	"sLogin/backend/utils"
 
 	"github.com/electricbubble/go-toast"
 	"github.com/getlantern/systray"
@@ -66,7 +66,7 @@ func onReady(title string, desc string, context context.Context) func() {
 func (a *App) Notify(msg model.NotifyData) {
 	_ = toast.Push(
 		msg.Data,
-		toast.WithIcon("C:\\Users\\16143\\Desktop\\sLogin\\frontend\\src\\assets\\images\\logo.png"),
+		toast.WithIcon("C:\\Users\\16143\\Desktop\\codeBox\\frontend\\src\\assets\\images\\logo.png"),
 		toast.WithTitle(msg.Title),
 		toast.WithAppID(config.TITLE),
 		toast.WithProtocolAction("🎉 Finished"),

@@ -1,7 +1,7 @@
 package core
 
 import (
-	"sLogin/backend/model"
+	"codeBox/backend/model"
 	"sync"
 
 	"github.com/panjf2000/ants/v2"

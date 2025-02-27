@@ -1,8 +1,8 @@
-# sLogin
+# codeBox
 
 > 是一款采用 `wails + vue3 + ts` 构建的登录器, 适用于张家界学院校园网系统
 
-[![Build and Release Wails App](https://github.com/Fromsko/sLogin/actions/workflows/main.yaml/badge.svg?branch=dev)](https://github.com/Fromsko/sLogin/actions/workflows/main.yaml)
+[![Build and Release Wails App](https://github.com/Fromsko/codeBox/actions/workflows/main.yaml/badge.svg?branch=dev)](https://github.com/Fromsko/codeBox/actions/workflows/main.yaml)
 
 ## 📑 功能模块
 

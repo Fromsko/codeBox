@@ -2,10 +2,10 @@ package config
 
 const (
 	VERSION = "1.0.0"
-	TITLE   = "SLogin"
+	TITLE   = "codeBox"
 	AUTHOR  = "Fromsko"
 	GITHUB  = "https://github.com/fromsko"
-	PROJECT = GITHUB + "/sLogin"
+	PROJECT = GITHUB + "/codeBox"
 )
 
 // Client config
